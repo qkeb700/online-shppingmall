@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url(all.css);
+@import url(animate.css);
+@import url(bootstrap.min.css);
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+.bold {
+  font-weight: bold;
+}
+.mtml-15 {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/****** HEADER *****/
+.top-header, header {
+  text-transform: uppercase;
+}
+.top-header {
+  font-size: 12px;
+}
+.top-header a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.join {
+  position: relative;
+  display: inline-block;
+}
+/* 말풍선 만들어주기 */
+.join::after {
+  content: "+3,000P";
+  display: block;
+  padding: 3px 8px;
+  background-color: #d9d9d9;
+  color: #fff;
+  position: absolute;
+  bottom: -30px;
+  animation: updown 2s infinite;
+}
+/* 말풍선에 붙어있는 뾰족한 세모같은거 */
+.join::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 3px;
+  border-style: solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: #c9c9c9;
+  position: absolute;
+  bottom: -6px;
+  left: 20px;
+  animation: updown2 2s infinite;
+}
+.top-right ul li:last-child {
+  position: relative;
+}
+.searchbox {
+  position: absolute;
+  width: 230px;
+  top: 30px;
+  left: -200px;
+  display: none;
+  z-index: 99;
+}
+.logo {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  font-size: 60px;
+  color: #333;
+  padding-bottom: 30px;
+}
+nav {
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 15px;
+}
+.hamburger {
+  width: 25px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  margin-top: 4px;
+  height: 2px;
+  background-color: #000;
+}
+.navbar-nav.gnb {
+  width: calc(100% - 65px);
+  flex-direction: row;
+}
+.gnb>li {
+  position: relative;
+}
+.lnb {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -20;
+  padding: 30px 15px 15px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.8);
+}
+.gnb>li:last-child>ul.lnb {
+  left: -80px;
+}
+.lnb li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+/****** 본문 *******/
+
+/***** slider *****/
+.slider {
+  width: 100%;
+  height: 750px;
+  position: relative;
+}
+.imgbox {
+  height: 750px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+ z-index: 2; 
+}
+.imgbox2 {
+  height: 270px;
+  background-color: #666;
+  text-align: center;
+  color: #fff;
+  background-size: cover;
+}
+.imgbox2 h2 {
+  letter-spacing: 10px;
+}
+.imgbox2 p {
+  letter-spacing: -1px;
+}
+@keyframes updown {
+  0%{bottom:-30px;}
+  10%{bottom:-35px;}
+  20%{bottom:-30px;}
+  30%{bottom:-35px;}
+  40%{bottom:-30px;}
+}
+@keyframes updown2 {
+  0%{bottom:-8px;}
+  10%{bottom:-13px;}
+  20%{bottom:-8px;}
+  30%{bottom:-13px;}
+  40%{bottom:-8px;}
+}
