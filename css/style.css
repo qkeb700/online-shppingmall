@@ -11,6 +11,11 @@ a {
   color: #333;
   text-decoration: none;
 }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 a:hover {
   color: rgba(0, 0, 0, 0.4);
 }
@@ -154,6 +159,44 @@ nav {
 }
 .imgbox2 p {
   letter-spacing: -1px;
+}
+/***** WEEKLY BEST *****/
+.active{
+  background-color: #eeeeee;
+}
+.wb-list{
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.wb-list li a {
+  display: block;
+  width: 222px;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid #333;
+  border-right: none;
+}
+.wb-list li:last-child{
+  border-right: 1px solid #333;
+}
+.h-800{
+  height:800px;
+}
+.container-in{
+  width: 5700px;
+}
+.list-8{
+  width: 1140px;
+}
+.list-8 a{
+  margin-bottom: 25px;
+}
+.list-8 img{
+  max-width: 100%;
+  width: 250px;
+  height: 380px;
 }
 @keyframes updown {
   0%{bottom:-30px;}
