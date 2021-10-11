@@ -42,6 +42,28 @@ $(function(){
       left: lft
     }, 500);
   });
+
+  // 이미지에 커서올릴 때 가격 정보 보이게하기
+  $('.list-8').find('a').on({
+    mouseenter: function(){
+      let text = $(this).data('text');
+      let textArr = new Array();
+      if(text){
+        textArr = text.split('||');
+      } else {
+        textArr[0] = "제목미정";
+        textArr[1] = "가격준비중";
+      }
+      let str = '<div class="over">' +
+                '<h4 class="text-center">' + textArr[0] + '</h4>' +
+                '<p class="text-center">'  + textArr[1] + '</p>' +
+                '</div>';
+      $(this).append(str);                
+    },
+    mouseleave: function(){
+      $(this).find('.over').remove();
+    }
+  });
 });
 
 function fadeout(){
