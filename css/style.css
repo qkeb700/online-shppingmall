@@ -237,23 +237,71 @@ table{
   height: 50px;
   background-color: #666;
 }
+.col-20{
+  max-width:20%;
+  flex: row wrap;
+}
+.card-list {
+  position: relative;
+}
+.card-list .card {
+  border:none;
+  border-bottom: 1px dashed #999;
+  padding-bottom: 30px;
+}
+.card-list img {
+  width: 200px;
+  float: left;
+}
+.card-list h5.card-title, .card-list p.card-text {
+  width: calc(100% - 220px);
+  position: absolute;
+  left: 220px;
+  text-align: left;
+}
+.card-list p {
+  top: 50px;
+  left: 220px;
+}
+.card-list a.wish {
+  top: 80px;
+  left: 220px;
+}
+.card-list a.cart {
+  top: 80px;
+  left: 280px;
+}
 /* 상품목록 이미지 */
 .card{
   position: relative;
+}
+.card img{
+  height: 350px;
+  max-width: 100%;
+  object-fit: cover;
+}
+.card:hover .cart,.card:hover .wish{
+  display:block;
 }
 .wish{
   position: absolute;
   left: 14px;
   top: 7px;
   font-size: 40px;
-  color: rgba(230, 11, 11, 0.6)
+  color: rgba(230, 11, 11, 0.6);
+  display: none;
+  
 }
 .cart{
   position: absolute;
   right: 14px;
   top: 7px;
   font-size: 40px;
-  color: rgba(15, 18, 182, 0.6)
+  color: rgba(15, 18, 182, 0.6);
+  display: none;
+}
+.card-title, .card-text{
+  text-align: center;
 }
 @keyframes updown {
   0%{bottom:-30px;}

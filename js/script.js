@@ -64,6 +64,21 @@ $(function(){
       $(this).find('.over').remove();
     }
   });
+
+  // 첫번째 테이블을 클릭하여 상품목록 나열
+  $('.table-list').click(function(){
+    $('.product-list').children().removeClass().addClass("col-12 my-3 card-list");
+  })
+
+  // grid-4를 클릭하여 상품목록을 나열할 때
+  $('.grid-4').click(function(){
+    $('.product-list').children().removeClass().addClass("col-3 my-3");
+  })
+  // grid-5를 클릭하여 상품목록 나열
+  $('.grid-5').click(function(){
+    // $('.product-list').css('flex-direction', 'row');
+    $('.product-list').children().removeClass().addClass("col-20 my-3 px-3");
+  })
 });
 
 function fadeout(){
