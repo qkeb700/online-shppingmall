@@ -237,6 +237,24 @@ table{
   height: 50px;
   background-color: #666;
 }
+/* 상품목록 이미지 */
+.card{
+  position: relative;
+}
+.wish{
+  position: absolute;
+  left: 14px;
+  top: 7px;
+  font-size: 40px;
+  color: rgba(230, 11, 11, 0.6)
+}
+.cart{
+  position: absolute;
+  right: 14px;
+  top: 7px;
+  font-size: 40px;
+  color: rgba(15, 18, 182, 0.6)
+}
 @keyframes updown {
   0%{bottom:-30px;}
   10%{bottom:-35px;}
