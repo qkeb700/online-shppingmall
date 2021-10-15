@@ -303,6 +303,43 @@ table{
 .card-title, .card-text{
   text-align: center;
 }
+/******** FOOTER **********/
+footer{
+  background-color: #666;
+  margin-top: 50px;
+}
+.card-content i{
+  color: orange;
+}
+footer .card{
+  border:none;
+  background-color: #666;
+}
+.card-content{
+  width: 150px;
+}
+.card-title{
+  margin-top: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.learn-more small{
+  color: #fff;
+}
+.card-footer{
+  border: none;
+}
+.card-footer>div{
+  position: absolute;
+  right: 10px;
+}
+.follow-text{
+  margin-right: 10px;
+  font-weight: bold;
+}
+.card-footer label i{
+  padding: 0 5px;
+}
 @keyframes updown {
   0%{bottom:-30px;}
   10%{bottom:-35px;}
