@@ -340,6 +340,36 @@ footer .card{
 .card-footer label i{
   padding: 0 5px;
 }
+
+/******** VIEW *********/
+.bigImgBox img{
+  max-width: 100%;
+  object-fit: cover;
+}
+.smallImgs{
+  margin-top: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+.smallImgs .col-cu-3{
+  margin-right: 7px;
+  
+}
+.col-cu-3:last-child{
+  margin-right: 0;
+}
+.smallImgs img{
+  max-width: 100%;
+  border: 5px solid #999;
+  height: 150px;
+}
+.smallImgs img:hover{
+  cursor: pointer;
+}
+img.borderActive{
+  border-color: #333;
+}
+
 @keyframes updown {
   0%{bottom:-30px;}
   10%{bottom:-35px;}
