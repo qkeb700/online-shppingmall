@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url(all.css);
 @import url(animate.css);
+@import url(color.css);
 @import url(bootstrap.min.css);
 
 body {
@@ -368,6 +369,36 @@ footer .card{
 }
 img.borderActive{
   border-color: #333;
+}
+.price{
+  font-size: 25px;
+  margin-top: 25px;
+}
+.product-desc label{
+  color: #999;
+}
+.label label{
+  margin-right: 25px;
+  margin-bottom: 0;
+}
+.product-desc{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.colorbox{
+  margin-left: 60px;
+  margin-top: 10px;
+}
+.color label{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 13px;
+}
+.color input[type=radio]{
+  display: none;
 }
 
 @keyframes updown {
