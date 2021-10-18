@@ -30,4 +30,15 @@ $(function(){
             $('.colorbox').html(radioInput);
         }
     })
+
+    // 컬러를 누르면 그 색에 맞는 이름값 출력
+    $(document).on('change', "input[name='color']", function(){
+        addOpt();
+    })
+
+    function addOpt(){
+        // 컬러박스중 하나를 누르면 색명이 출력
+        let optv1 = $('.color').find(':checked').val();
+        $('.color').children('span').html("컬러 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + optv1);
+    }
 })
