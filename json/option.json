@@ -8,5 +8,11 @@
         "red": 1000,
         "pink": 2000,
         "blue": 3000
+    },
+    "size": {
+        "small" : 5000,
+        "medium": 0, 
+        "large": 10000,
+        "xlarge": 20000
     }
 }

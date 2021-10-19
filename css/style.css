@@ -304,6 +304,22 @@ table{
 .card-title, .card-text{
   text-align: center;
 }
+li.color{
+  margin-bottom: 15px;
+}
+#sizeselection{
+  width: 300px;
+  height: 35px;
+  margin-top: 7px;
+  border-color: #ddd;
+  text-indent: 10px;
+}
+.quantity{
+  width: 300px;
+  height: 100px;
+  margin-top: 30px;
+  background-color: #eee;
+}
 /******** FOOTER **********/
 footer{
   background-color: #666;

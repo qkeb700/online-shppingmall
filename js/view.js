@@ -27,7 +27,14 @@ $(function(){
                               '<label for="'+key+'"></label>';
                 i++;
             }
+            let sizeJson = data.size;
+            let selectOption = '<option selected value="사이즈를 선택하세요">사이즈를 선택하세요</option>';
+            for(const key in sizeJson){
+                selectOption += '<option value="'+ key + '">'+ key.toUpperCase() + '</option>';
+            }
+
             $('.colorbox').html(radioInput);
+            $('#sizeselection').html(selectOption);
         }
     })
 
