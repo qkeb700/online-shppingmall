@@ -415,6 +415,52 @@ img.borderActive{
 }
 .color input[type=radio]{
   display: none;
+  /* border-left: none; */
+  border-right: none;
+}
+
+.quantity p {
+  margin-right: 20px;
+  margin-top: 18px;
+  font-size: 15px;
+}
+.quantity div:first-child{
+  width: 40%;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+.quantity div:last-child{
+  width: 70%;
+}
+.flex-end{
+  justify-content: flex-end;
+}
+.qty-box{
+  border: 1px solid #999;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.qty-box a:first-child{
+  border-right: 1px solid #999;
+}
+.qty-box a:last-child{
+  border-left: 1px solid #999;
+}
+.qty{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+}
+.quantity input[type]{
+  width: 35px;
+  background-color: #fff;
+  text-align: center;
+  border: none;
+  vertical-align: super;
 }
 
 @keyframes updown {
