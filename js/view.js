@@ -30,8 +30,9 @@ $(function(){
             let sizeJson = data.size;
             let selectOption = '<option selected value="사이즈를 선택하세요">사이즈를 선택하세요</option>';
             for(const key in sizeJson){
-                selectOption += '<option value="'+ key + '">'+ key.toUpperCase() + '</option>';
+                selectOption += '<option value="'+ key + '"'+ 'data-opt2="'+sizeJson[key]+'">'+ key.toUpperCase() + '</option>';
             }
+            console.log(selectOption);
 
             $('.colorbox').html(radioInput);
             $('#sizeselection').html(selectOption);
@@ -42,10 +43,17 @@ $(function(){
     $(document).on('change', "input[name='color']", function(){
         addOpt();
     })
+    $(document).on('change', "#sizeselection", function(){
+        addOpt();
+    })
 
     function addOpt(){
         // 컬러박스중 하나를 누르면 색명이 출력
         let optv1 = $('.color').find(':checked').val();
         $('.color').children('span').html("컬러 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + optv1);
+        
+        let optv2 = $('#sizeselection').val();
+        $('.result-color').html("컬러 : " + optv1);
+        $('.result-size').html("사이즈 : " + optv2);
     }
 })

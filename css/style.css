@@ -420,14 +420,14 @@ img.borderActive{
 }
 
 .quantity p {
-  margin-right: 20px;
+  margin-right: 7px;
   margin-top: 18px;
   font-size: 15px;
 }
 .quantity div:first-child{
-  width: 40%;
+  width: 130px;
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 .quantity div:last-child{
   width: 70%;
