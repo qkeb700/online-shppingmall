@@ -32,7 +32,6 @@ $(function(){
             for(const key in sizeJson){
                 selectOption += '<option value="'+ key + '"'+ 'data-opt2="'+sizeJson[key]+'">'+ key.toUpperCase() + '</option>';
             }
-            console.log(selectOption);
 
             $('.colorbox').html(radioInput);
             $('#sizeselection').html(selectOption);
@@ -56,4 +55,17 @@ $(function(){
         $('.result-color').html("컬러 : " + optv1);
         $('.result-size').html("사이즈 : " + optv2);
     }
+
+    // 수량 점검
+    $('a.qty').click(function(e){
+        e.preventDefault();
+        let qty = $('input[name="quantity"]').val();
+        let newqty = $(this).data('q');
+        qty = Number(qty) + Number(newqty);
+        if(qty < 1){
+            alert("수량 최소단위는 1입니다.");
+            return false;
+        }
+        $('input[name="quantity"]').val(qty);
+    })
 })

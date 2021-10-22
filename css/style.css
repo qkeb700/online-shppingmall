@@ -440,6 +440,9 @@ img.borderActive{
   background-color: #fff;
   margin-top: 5px;
 }
+.qty-box a{
+  text-decoration: none;
+}
 .qty-box a:first-child{
   border-right: 1px solid #999;
 }
