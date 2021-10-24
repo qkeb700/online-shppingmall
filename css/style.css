@@ -465,6 +465,16 @@ img.borderActive{
   border: none;
   vertical-align: super;
 }
+.total{
+  width: 300px;
+  background-color: #eee;
+  height: 100px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100px;
+}
 
 @keyframes updown {
   0%{bottom:-30px;}
