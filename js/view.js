@@ -1,4 +1,12 @@
 $(function(){
+
+    let opt1v;
+    let opt2v;
+    let opt1 = 0;
+    let opt2 = 0;
+    let price = $('#price').val();
+    let totalPrice = parseInt(price);
+
     // 작은 네개의 이미지 상자중에 하나를 클릭하면 큰 이미지박스에서 보여진다.
     $('.smallImgs img').click(function(){
         let img = $(this).attr('src');
@@ -28,7 +36,7 @@ $(function(){
                 i++;
             }
             let sizeJson = data.size;
-            let selectOption = '<option selected value="사이즈를 선택하세요">사이즈를 선택하세요</option>';
+            let selectOption = '<option selected value="">사이즈를 선택하세요</option>';
             for(const key in sizeJson){
                 selectOption += '<option value="'+ key + '"'+ 'data-opt2="'+sizeJson[key]+'">'+ key.toUpperCase() + '</option>';
             }
@@ -48,12 +56,20 @@ $(function(){
 
     function addOpt(){
         // 컬러박스중 하나를 누르면 색명이 출력
-        let optv1 = $('.color').find(':checked').val();
-        $('.color').children('span').html("컬러 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + optv1);
+        opt1v = $('.color').find(':checked').val();
+        $('.color').children('span').html("컬러 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + opt1v);
         
-        let optv2 = $('#sizeselection').val();
-        $('.result-color').html("컬러 : " + optv1);
-        $('.result-size').html("사이즈 : " + optv2);
+        opt2v = $('#sizeselection').val();
+        $('.result-color').html("컬러 : " + opt1v);
+        $('.result-size').html("사이즈 : " + opt2v);
+
+        opt1 = parseInt($('.color').find(':checked').data('opt1'));
+        if(opt2v){
+            opt2 = parseInt($('#sizeselection').find(':checked').data('opt2'));
+        }
+        qty = parseInt($('input[name="quantity"]').val());
+        totalPrice = (opt1 + opt2 + parseInt(price)) * qty;
+        $('.total').html(comma(totalPrice) + "원");
     }
 
     // 수량 점검
@@ -66,6 +82,12 @@ $(function(){
             alert("수량 최소단위는 1입니다.");
             return false;
         }
+        totalPrice = Number(qty)*Number(price);
         $('input[name="quantity"]').val(qty);
+        addOpt();
     })
+
+    function comma(x){
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    } 
 })

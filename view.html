@@ -152,37 +152,40 @@
                 <p class="label">
                   <label for="">적립금</label> 5%
                 </p>
-                <ul class="product-option">
-                  <li class="color">
-                    <span> 컬러 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White </span>
-                    <div class="colorbox">
-                      <!-- 컬러옵션 json에서 출력 -->
-                    </div>
-                  </li>
-                  <li class="size">
-                    <span> 크기</span><br>
-                    <select name="sizeselection" class="form-control" id="sizeselection">
-                      <!-- json에서 받아서 js로 구현 -->
-                    </select>
-                  </li>
-                  <li class="quantity d-flex">
-                    <div>
-                      <span class="result-color"></span><br>
-                      <span class="result-size"></span>
-                    </div>
-                    <div class="d-flex flex-end align-items-center mr-4">
-                      <p>수량</p>
-                      <div class="qty-box">
-                        <a href="#" class="qty" data-q="-1">-</a>
-                        <input type="text" name="quantity" value=1 readonly>
-                        <a href="#" class="qty" data-q="+1">+</a>
+                <form action="" id="vieForm" name="viewForm" method="get">
+                  <input type="hidden" name="price" id="price" value="400000">
+                  <ul class="product-option">
+                    <li class="color">
+                      <span> 컬러 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;White </span>
+                      <div class="colorbox">
+                        <!-- 컬러옵션 json에서 출력 -->
                       </div>
-                    </div>
-                  </li>
-                  <li class="total">
-                    400,000원
-                  </li>
-                </ul>
+                    </li>
+                    <li class="size">
+                      <span> 크기</span><br>
+                      <select name="sizeselection" class="form-control" id="sizeselection">
+                        <!-- json에서 받아서 js로 구현 -->
+                      </select>
+                    </li>
+                    <li class="quantity d-flex">
+                      <div>
+                        <span class="result-color"></span><br>
+                        <span class="result-size"></span>
+                      </div>
+                      <div class="d-flex flex-end align-items-center mr-4">
+                        <p>수량</p>
+                        <div class="qty-box">
+                          <a href="#" class="qty" data-q="-1">-</a>
+                          <input type="text" name="quantity" value=1 readonly>
+                          <a href="#" class="qty" data-q="+1">+</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="total">
+                      400,000원
+                    </li>
+                  </ul>
+                </form>
               </div>
           </div>
       </div>
