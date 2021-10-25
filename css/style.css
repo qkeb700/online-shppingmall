@@ -308,14 +308,14 @@ li.color{
   margin-bottom: 15px;
 }
 #sizeselection{
-  width: 300px;
+  width: 320px;
   height: 35px;
   margin-top: 7px;
   border-color: #ddd;
   text-indent: 10px;
 }
 .quantity{
-  width: 300px;
+  width: 320px;
   height: 100px;
   margin-top: 30px;
   background-color: #eee;
@@ -466,7 +466,7 @@ img.borderActive{
   vertical-align: super;
 }
 .total{
-  width: 300px;
+  width: 320px;
   background-color: #eee;
   height: 100px;
   margin-top: 10px;
@@ -474,6 +474,39 @@ img.borderActive{
   font-weight: bold;
   text-align: center;
   line-height: 100px;
+}
+.btn-box{
+  width: 320px;
+  margin-top: 10px;
+}
+.btn-wish{
+  width: 75px;
+  height: 75px;
+  margin-right: 7px;
+  background-color: #eee;
+  font-size: 30px;
+  color: #999;
+  border-bottom: 3px solid #666;
+}
+.btn-cart{
+  width: 75px;
+  height: 75px;
+  margin-right: 6px;
+  background-color: #eee;
+  font-size: 30px;
+  color:#999;
+  border-bottom: 3px solid #666;
+}
+.btn-order{
+  width: 150px;
+  height: 75px;
+  background-color: #eee;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 3px solid #666;
+}
+.btn-order:hover{
+  background-color: burlywood;
 }
 
 @keyframes updown {
