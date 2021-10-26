@@ -87,6 +87,11 @@ $(function(){
         addOpt();
     })
 
+    // 카트 html로 이동
+    $('.btn-cart').click(function(){
+        $('#viewForm').attr('action', 'cart.html').submit();
+    })
+
     function comma(x){
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     } 
