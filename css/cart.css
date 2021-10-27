@@ -1,0 +1,29 @@
+table th{
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.cart-list td{
+    background-color: #fff;
+    height: 120px;
+    border-bottom: 1px solid #ddd;
+}
+table img{
+    max-width: 100%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+}
+.desc-prod h5{
+    margin-bottom: 3px;
+}
+.desc-prod{
+    margin-left: 15px;
+    height: 100px;
+    width: 160px;
+}
+.desc-prod p{
+    margin-bottom: 5px;
+    color: #999;
+}
