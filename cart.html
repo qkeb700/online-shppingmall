@@ -24,7 +24,7 @@
             <a href="#" class="join">JOIN US</a>
             <a href="#">ORDER</a>
             <!-- 장바구니에 담긴 수량을 함께 표시 -->
-            <a href="#" class="cart">CART <span class="badge badge-secondary">0</span></a>
+            <a href="#" class="carts">CART <span class="badge badge-secondary">0</span></a>
             <a href="#">MYPAGE</a>
           </div>
           <div class="top-right">
@@ -123,54 +123,44 @@
         </nav>
       </header>
       <div class="container pb-5">
-        <h1 class="text-center mt-5 mb-3">장바구니</h1>
-        <table class="cart-list py-5">
-          <thead>
-            <colgroup>
-              <col width="5%">
-              <col>
-              <col width="8%">
-              <col width="10%">
-              <col width="10%">
-              <col width="8%">
-              <col width="8%">
-              <col width="8%">
-            </colgroup>
-            <tr>
-              <th>
-                <input type="checkbox" name="all" value="1" id="" checked>
-              </th>
-              <th>상품명</th>
-              <th>가격</th>
-              <th>수량</th>
-              <th>합계</th>
-              <th>적립금</th>
-              <th>배송비</th>
-              <th><button type="button" class="btn btn-outline-danger btn-del">삭제하기</button></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <input type="checkbox" name="all" value="1" id="" checked>
-              </td>
-              <td class="d-flex">
-                <img src="img/xex.jpg" alt="xex">
-                <div class="desc-prod">
-                  <h5>리웨 롱가디건</h5>
-                  <p>색상: 블랙, 사이즈: Xl, 수량: 1, 매진임박 계절아이템</p>
-                  <a href="#" class="btn btn-dark">옵션수정</a>
-                </div>
-              </td>
-              <td>500,000</td>
-              <td class="cart-quantity-box">수량</td>
-              <td>400,000</td>
-              <td>40</td>
-              <td>4,000원</td>
-              <td><button type="button" class="btn btn-outline-danger btn-del">삭제하기</button></td>
-            </tr>
-          </tbody>
-        </table>
+        <h1 class="mt-5 text-center">장바구니</h1>
+          <table class="cartlist py-5">
+            <thead>
+              <colgroup>
+                <col width="5%">
+                <col>
+                <col width="8%">
+                <col width="10%">
+                <col width="10%">
+                <col width="8%">
+                <col width="8%">
+                <col width="8%">
+              </colgroup>
+              <tr>
+                <th>
+                  <input type="checkbox" name="all" value="1" id="" checked>
+                </th>
+                <th>상품명</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
+                <th>적립금</th>
+                <th>배송비</th>
+                <th><button type="button" class="btn btn-outline-danger btn-del">삭제하기</button></th>
+              </tr>
+            </thead>
+            <tbody id="cart-body">
+              <div class="optPop">
+                sd
+              </div>
+            </tbody>
+          </table>
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-6 text-right">
+              <div class="total-money"></div>
+            </div>
+          </div>
       </div>
       <footer>
         <div class='container-fluid'>
