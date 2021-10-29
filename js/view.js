@@ -92,6 +92,11 @@ $(function(){
         $('#viewForm').attr('action', 'cart.html').submit();
     })
 
+    // 오더 html로 이동
+    $('.btn-order').click(function(){
+        $('#viewForm').attr('action', 'order.html').submit();
+    })
+
     function comma(x){
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     } 
